@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import SeekerNavi from "./layouts/seeker/SeekerNavi";
+import "semantic-ui-css/semantic.min.css";
+import CvSeekerDashboard from "./layouts/seeker/CvSeekerDashboard";
+import { Container } from "semantic-ui-react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="SeekerMain">
+      <SeekerNavi />
+      <Container className="main">
+        <CvSeekerDashboard />
+      </Container>
     </div>
   );
 }
